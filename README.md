@@ -21,3 +21,7 @@ Topics:
 - Magnetic storm (maybe solar activity could affect some parameters of balloon data?)
 
 ### Extra ideas
+
+- Flexible API manipulation via Rails paired with React/Vue
+- FAQ page for new users/docs for reoccurring users
+- Lighthearted language depending on the overall feel of how the data's being presented.
