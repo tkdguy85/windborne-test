@@ -1,10 +1,10 @@
-## windborne-test
+# Windborne Test
 
 Welcome to what maybe nothing more than my mental dumping ground. Long story short, this repo is starting as an engineering challenge that may or may not lead to anything, but has peaked my interest enough. This is going to be a WIP, but since I like writing my thought process down, I'm outlining what the plans our here so I can either look back and laugh at my feeble attempts or smile and nod at the struggles that led this getting somewhere.
 
 Instead of outlining what the challenge is, I'll just document the thought process
 
-### Initial Setup
+## Initial Setup
 
 Phase 1 - Setup simple FE interface that'll list the first n number of balloons (maybe 10 to start)
 
