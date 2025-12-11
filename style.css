@@ -1,0 +1,16 @@
+body {
+  background-color: black;
+  color: lightgreen;
+  font-family: monospace, Courier;
+  padding: 5rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  
+  &:hover {
+    color: yellow;
+    cursor: pointer;
+  }
+}

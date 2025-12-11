@@ -6,7 +6,9 @@ Instead of outlining what the challenge is, I'll just document the thought proce
 
 ## Initial Setup
 
-Phase 1 - Setup simple FE interface that'll list the first n number of balloons (maybe 10 to start)
+Phase 0 - Dry run (probably locally): spin up and spit out data and see what else comes to mind.
+
+Phase 1 - Setup simple React FE interface that'll list the first n number of balloons (maybe 10 to start)
 
 Phase 2 - Probably using [Leaflet](https://leafletjs.com/), plot out balloon locations on a map via a pin. Additionally, have maybe a line plot that can show each balloons altitude readings over time.
 
@@ -19,9 +21,10 @@ Topics:
 - Wildfire tracking (tracking either air quality or smoke direction/dissipation)
 - Commercial flight turbulence tracking (would this be public, tho?)
 - Magnetic storm (maybe solar activity could affect some parameters of balloon data?)
+- Some of NASA's APIs are interesting [DONKI](https://api.nasa.gov/) (of course in Shrek's voice)
 
 ### Extra ideas
 
 - Flexible API manipulation via Rails paired with React/Vue
 - FAQ page for new users/docs for reoccurring users
-- Lighthearted language depending on the overall feel of how the data's being presented.
+- Lighthearted language depending on the overall feel of how the data's being presented. (serious for fire, fun for learning, eh?)
