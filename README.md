@@ -2,7 +2,7 @@
 
 Welcome to what maybe nothing more than my mental dumping ground. Long story short, this repo is starting as an engineering challenge that may or may not lead to anything, but has peaked my interest enough. This is going to be a WIP, but since I like writing my thought process down, I'm outlining what the plans our here so I can either look back and laugh at my feeble attempts or smile and nod at the struggles that led this getting somewhere.
 
-Instead of outlining what the challenge is, I'll just document the thought process
+Instead of outlining what the challenge is, I'll just document the thought process. Some assumptions are being made about the incoming balloon data, but for reference, here's a start of what I was looking at from the [Windborne API docs](https://api.windbornesystems.com/observations/version_1/metadata/current-location/)
 
 ## Initial Setup
 

@@ -12,7 +12,7 @@ async function loadBalloonData() {
     const balloonDisplay = document.getElementById('balloons-container')
 
     balloonData.forEach((item, index) => {
-      // Assuming 3rd value is Altitude, not sure of metric, freedom units, bathtubs
+      // Assuming 3rd value is Altitude in meters, not US freedom units or household bathtub widths
       const [lat, long, alt] = item
 
       const div = document.createElement('div')
@@ -32,7 +32,7 @@ async function loadBalloonData() {
   } catch {
     console.error('Issue fetching balloon data:', error)
   }
-
-  // Run on page load, future update will be to manipulate timing
-  loadBalloonData()
 }
+
+// Run on page load, future update will be to manipulate timing
+loadBalloonData()
