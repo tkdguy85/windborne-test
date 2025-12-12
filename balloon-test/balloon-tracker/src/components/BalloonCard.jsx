@@ -7,7 +7,7 @@ function BalloonCard({balloon}) {
   return (
     <div className="balloon-card">
       <div className="balloon-info">
-        <h1 className="balloon-name">{balloon.name}</h1>
+        <h2 className="balloon-name">{balloon.name}</h2>
         <p className="balloon-lat">{balloon.lat}</p>
         <p className="balloon-long">{balloon.long}</p>
         <p className="balloon-alt">{balloon.alt}</p>
