@@ -1,4 +1,4 @@
-import './App.css'
+import './css/App.css'
 import Home from './pages/Home'
 import History from './pages/History'
 import Tracking from './pages/Tracking'

@@ -1,3 +1,5 @@
+import '../css/Tracking.css'
+
 function Tracking() {
   return (
     <div className="tracking-empty">

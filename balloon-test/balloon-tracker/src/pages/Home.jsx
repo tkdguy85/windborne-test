@@ -1,4 +1,5 @@
 import BalloonCard from "../components/BalloonCard"
+import "../css/Home.css"
 
 function Home() {
 

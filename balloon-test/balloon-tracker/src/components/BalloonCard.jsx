@@ -1,3 +1,5 @@
+import '../css/BalloonCard.css'
+
 function BalloonCard({balloon}) {
   
   function onTrackClick() {
@@ -8,9 +10,9 @@ function BalloonCard({balloon}) {
     <div className="balloon-card">
       <div className="balloon-info">
         <h2 className="balloon-name">{balloon.name}</h2>
-        <p className="balloon-lat">{balloon.lat}</p>
-        <p className="balloon-long">{balloon.long}</p>
-        <p className="balloon-alt">{balloon.alt}</p>
+        <p className="balloon-lat">Latitude: <span className="balloon-data">{balloon.lat}</span></p>
+        <p className="balloon-long">Longitude: <span className="balloon-data">{balloon.long}</span></p>
+        <p className="balloon-alt">Altitude (meters): <span className="balloon-data">{balloon.alt}</span></p>
         <button className="balloon-track" onClick={onTrackClick}>
           Track Balloon
         </button>
