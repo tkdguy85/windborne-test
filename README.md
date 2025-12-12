@@ -4,6 +4,10 @@ Welcome to what maybe nothing more than my mental dumping ground. Long story sho
 
 Instead of outlining what the challenge is, I'll just document the thought process. Some assumptions are being made about the incoming balloon data, but for reference, here's a start of what I was looking at from the [Windborne API docs](https://api.windbornesystems.com/observations/version_1/metadata/current-location/)
 
+## Project spin up stuffs
+
+
+
 ## Initial Setup
 
 Phase 0 - Dry run (probably locally): spin up and spit out data and see what else comes to mind.
