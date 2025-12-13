@@ -1,10 +1,39 @@
 import BalloonCard from "../components/BalloonCard"
+import { useState, useEffect } from "react"
+import { getCurrentBalloonData, getTwelveHourBalloonData } from "../services/api"
 import "../css/Home.css"
 
 function Home() {
+  const [balloons, setBalloons] = useState([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(null)
+
+  useEffect(() => {
+    const loadBalloonData = async () => {
+      try {
+        const currentData = await getCurrentBalloonData()
+        
+        const balloons = currentData.map((item, index) => ({
+          name: `Balloon ${index + 1}`,
+          lat: item[0],
+          long: item[1],
+          alt: item[2],
+        }))
+
+        setBalloons(balloons)
+      } catch (err) {
+        console.log(err)
+        setError('Failed to load balloon data')
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    loadBalloonData()
+  }, [])
 
   // Dummy content for dev
-  const balloons = [
+  const weatherBalloons = [
     { name: "balloon 1", lat: 74.79775364616769, long: 128.71579339618108, alt: 16.04990470521829},
     { name: "balloon 2", lat: -75.04194305757703, long: 19.731549521440435, alt: 17.342035411667215},
     { name: "balloon 3", lat: 59.08460591355339, long: -51.93060372684638, alt: 2.4746633947423344},
@@ -14,10 +43,21 @@ function Home() {
 
   return (
     <div className="home">
-      <div className="balloon-grid">
+      <p>Test Data</p>
+      {/* <div className="balloon-grid">
         {
-          balloons.map(balloon => <BalloonCard balloon={balloon} key={balloon.name}/>)
+          weatherBalloons.map(balloon => <BalloonCard balloon={balloon} key={balloon.name}/>)
         }
+      </div>
+       */}
+      <p>API Data</p>
+      <div className="balloon-grid">
+        {loading && <p>Loading...</p>}
+        {error && <p>{error}</p>}
+
+        {!loading && !error && balloons.map((balloon) => (
+          <BalloonCard balloon={balloon} key={balloon.name} />
+        ))}
       </div>
     </div>
   )
