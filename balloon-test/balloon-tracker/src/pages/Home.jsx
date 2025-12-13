@@ -1,6 +1,6 @@
 import BalloonCard from "../components/BalloonCard"
 import { useState, useEffect } from "react"
-import { getCurrentBalloonData, getTwelveHourBalloonData } from "../services/api"
+import { getCurrentBalloonData } from "../services/api"
 import "../css/Home.css"
 
 function Home() {
@@ -23,7 +23,7 @@ function Home() {
         setBalloons(balloons)
       } catch (err) {
         console.log(err)
-        setError('Failed to load balloon data')
+        setError('Failed to load balloon data. Arbitrary limit exceeded.')
       } finally {
         setLoading(false)
       }
@@ -43,14 +43,14 @@ function Home() {
 
   return (
     <div className="home">
-      <p>Test Data</p>
-      {/* <div className="balloon-grid">
+      <h2 className="balloon-header">Test Data</h2>
+      <div className="balloon-grid">
         {
           weatherBalloons.map(balloon => <BalloonCard balloon={balloon} key={balloon.name}/>)
         }
       </div>
-       */}
-      <p>API Data</p>
+      
+      <h2 className="balloon-header">Live Data</h2>
       <div className="balloon-grid">
         {loading && <p>Loading...</p>}
         {error && <p>{error}</p>}

@@ -11,7 +11,7 @@ function App() {
 
       <NavBar />
       <main className='main-content'>
-        <p>Weather Balloon Listing</p>
+        <h1>Weather Balloon Listing</h1>
         <Routes>
           <Route path='/' element={ <Home /> }/>
           <Route path='/history' element={ <History /> }/>

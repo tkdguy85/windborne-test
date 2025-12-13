@@ -5,9 +5,9 @@ function NavBar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link to="/">Home</Link>
-        <Link to="/history">History</Link>
-        <Link to="/tracked">Tracking</Link>
+        <Link className="nav-link" to="/">Home</Link>
+        <Link className="nav-link" to="/history">Project Info</Link>
+        <Link className="nav-link" to="/tracked">Tracking</Link>
       </div>
     </nav>
   )
