@@ -82,6 +82,10 @@
 
 .balloon-pin {
   padding-top: 1rem;
+
+  &:hover {
+    color: greenyellow;
+  } 
 }
 
 .balloon-data {
