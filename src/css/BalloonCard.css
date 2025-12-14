@@ -81,6 +81,7 @@
 }
 
 .balloon-pin {
+  text-align: center;
   padding-top: 1rem;
 
   &:hover {
