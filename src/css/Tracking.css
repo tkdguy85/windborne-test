@@ -1,0 +1,20 @@
+.tracking-header {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.tracking-list ul {
+  width: 50%;
+
+  li {
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    list-style-type: circle;
+  }
+}
+
+.tracking-button {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+

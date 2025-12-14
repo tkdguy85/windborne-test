@@ -45,7 +45,7 @@ function BalloonCard({balloon}) {
         <h3>Flight Data</h3>
         <p className="balloon-lat">Latitude: <span className="balloon-data">{balloon.lat}</span></p>
         <p className="balloon-long">Longitude: <span className="balloon-data">{balloon.long}</span></p>
-        <p className="balloon-alt">Altitude (meters): <span className="balloon-data">{balloon.alt}</span></p>
+        <p className="balloon-alt">Altitude: <span className="balloon-data">{balloon.alt != null ? Number(balloon.alt).toFixed(3) : ''} km</span></p>
         <a 
           href={`https://www.google.com/maps?q=${balloon.lat},${balloon.long}&z=2`}
           target='_blank'

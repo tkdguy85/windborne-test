@@ -29,7 +29,7 @@ function Tracking() {
   if (!tracked || tracked.length === 0) {
     return (
       <div className="tracking-empty">
-        <h2>No targets are currently being tracked</h2>
+        <h2 className='tracking-header'>No targets are currently being tracked</h2>
         <p>Tracked targets will be listed below</p>
       </div>
     )
@@ -37,13 +37,15 @@ function Tracking() {
 
   return (
     <div className="tracking-list">
-      <h2>Currently Tracked Targets</h2>
+      <h2 className='tracking-header'>Currently Tracked Targets</h2>
       <ul>
         {tracked.map((balloon) => (
           <li key={`${balloon.name}-${balloon.lat}-${balloon.long}`} className="tracked-item">
             <strong>{balloon.name}</strong>
-            <div>Lat: {balloon.lat} • Long: {balloon.long} • Alt: {balloon.alt}</div>
-            <button onClick={() => removeTrack(balloon.name)}>Stop Tracking</button>
+            <p>Lat: {balloon.lat}</p>
+            <p>Long: {balloon.long}</p>
+            <p>Alt: {balloon.alt != null ? Number(balloon.alt).toFixed(3) : ''} km</p>
+            <button className='tracking-button' onClick={() => removeTrack(balloon.name)}>Stop Tracking</button>
           </li>
         ))}
       </ul>

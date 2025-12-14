@@ -1,5 +1,6 @@
 const API_KEY = '' // Future calls might need to have keys in place
-const BASE_URL = '/api/treasure'
+// const BASE_URL = '/api/treasure' //! - Local use only
+const BASE_URL = 'https://a.windbornesystems.com/treasure'
 
 export const getCurrentBalloonData = async () => {
   const res = await fetch(`${BASE_URL}/00.json`)

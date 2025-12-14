@@ -3,8 +3,15 @@ import '../css/History.css'
 function History() {
   return (
     <div>
-      <h1>Project History</h1>
-      <p>Everyone's favorite video game quote - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error nulla voluptate, amet rerum corporis laudantium est voluptas exercitationem eveniet illo doloremque consectetur hic nobis ipsum numquam saepe laboriosam. Numquam impedit molestias reiciendis mollitia quae. Adipisci repellat doloremque aperiam vitae, quia ea cupiditate aliquid in fugit iusto nobis sit dolores totam commodi eos! Praesentium excepturi quo magni fuga quas quia sit a ipsum ea impedit dicta doloremque officia consequuntur, culpa eveniet expedita tenetur aliquam cumque quis sapiente fugit porro rerum odio. Molestiae illo ipsum amet voluptatibus cum. Porro officia nisi neque corporis, incidunt ullam atque qui recusandae quae maiores soluta repellendus.</p>
+      <h1 className='history-header'>Project History</h1>
+      <p className='history-body'>Starting off as a proof of concept, this project's purpose is to demonstrate both weather balloon tracking as well as combined data usage across a variety of different edge cases.</p>
+      <ul>
+        <li>Tracking forest fire movement</li>
+        <li>Local Weather live-casting</li>
+        <li>Air streams data for commercial aircraft</li>
+        <li>Atmospheric monitoring for solar phenomenon</li>
+        <li>Military signal amplification</li>
+      </ul>
     </div>
   )
 }

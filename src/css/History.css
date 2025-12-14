@@ -1,0 +1,15 @@
+.history-header {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.history-body {
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+li {
+  margin-left: 20px;
+  padding-left: 10px;
+  list-style-type: square;
+}
