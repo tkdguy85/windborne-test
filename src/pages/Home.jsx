@@ -43,7 +43,7 @@ function Home() {
 
   return (
     <div className="home">
-      <h2 className="balloon-header">Test Data</h2>
+      <h2 className="balloon-header">Test Data (Static Info)</h2>
       <div className="balloon-grid">
         {
           weatherBalloons.map(balloon => <BalloonCard balloon={balloon} key={balloon.name}/>)
