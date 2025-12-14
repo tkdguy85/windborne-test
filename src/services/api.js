@@ -1,9 +1,9 @@
 const API_KEY = '' // Future calls might need to have keys in place
 // const BASE_URL = '/api/treasure' //! - Local use only
-const BASE_URL = 'https://a.windbornesystems.com/treasure'
+const BASE_URL = 'https://windborne.dallasgordon3.workers.dev/'
 
 export const getCurrentBalloonData = async () => {
-  const res = await fetch(`${BASE_URL}/00.json`)
+  const res = await fetch(`${BASE_URL}`)
   const data = await res.json()
   return data.slice(0, 10)
 }
