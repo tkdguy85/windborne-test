@@ -12,6 +12,15 @@ function History() {
         <li>Atmospheric monitoring for solar phenomenon</li>
         <li>Military signal amplification</li>
       </ul>
+
+      <p className='history-body'>Future styling plans include:</p>
+      <ul>
+        <li>Dark/light mode toggles</li>
+        <li>Multi hour data views toggle</li>
+        <li>Cleaner mobile experience</li>
+        <li>Additional balloon data points, trends, mapping</li>
+        <li>Faster pin rendering (currently handling very clunky)</li>
+      </ul>
     </div>
   )
 }

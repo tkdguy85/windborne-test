@@ -6,15 +6,17 @@ Instead of outlining what the challenge is, I'll just document the thought proce
 
 ## Project spin up stuffs
 
-
+npm run dev
 
 ## Initial Setup
 
-Phase 0 - Dry run (probably locally): spin up and spit out data and see what else comes to mind.
+~~Phase 0 - Dry run (probably locally): spin up and spit out data and see what else comes to mind.~~
 
-Phase 1 - Setup simple React FE interface that'll list the first n number of balloons (maybe 10 to start)
+~~Phase 1 - Setup simple React FE interface that'll list the first n number of balloons (maybe 10 to start)~~
 
-Phase 2 - Probably using [Leaflet](https://leafletjs.com/), plot out balloon locations on a map via a pin. Additionally, have maybe a line plot that can show each balloons altitude readings over time.
+Phase 2a - Probably using [Leaflet](https://leafletjs.com/), plot out balloon locations on a map via a pin. Additionally, have maybe a line plot that can show each balloons altitude readings over time.
+
+Phase 2b - Update balloon information to show tracking info overtime (i.e. distance traveled from one reading to another, current trending direction, altitude changes, etc.)
 
 ### Broader Picture
 
@@ -29,6 +31,8 @@ Topics:
 
 ### Extra ideas
 
+- Docker container set up for (n) number of balloon coverage
 - Flexible API manipulation via Rails paired with React/Vue
 - FAQ page for new users/docs for reoccurring users
 - Lighthearted language depending on the overall feel of how the data's being presented. (serious for fire, fun for learning, eh?)
+
