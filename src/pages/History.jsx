@@ -4,7 +4,7 @@ function History() {
   return (
     <div>
       <h1 className='history-header'>Project History</h1>
-      <p className='history-body'>Starting off as a proof of concept, this project's purpose is to demonstrate both weather balloon tracking as well as combined data usage across a variety of different edge cases.</p>
+      <h3 className='history-body'>Starting off as a proof of concept, this project's purpose is to demonstrate both weather balloon tracking as well as combined data usage across a variety of different edge cases.</h3>
       <ul>
         <li>Tracking forest fire movement</li>
         <li>Local Weather live-casting</li>
@@ -13,7 +13,7 @@ function History() {
         <li>Military signal amplification</li>
       </ul>
 
-      <p className='history-body'>Future styling plans include:</p>
+      <h3 className='history-body'>Future styling plans include:</h3>
       <ul>
         <li>Dark/light mode toggles</li>
         <li>Multi hour data views toggle</li>
