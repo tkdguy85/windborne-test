@@ -10,6 +10,7 @@ function BalloonCard({balloon}) {
       const exists = tracked.some(b => b.name === balloon.name)
       setTracking(exists)
     } catch (e) {
+      console.error('Error reading balloon tracking from localStorage', e)
       setTracking(false)
     }
   }, [balloon.name])
